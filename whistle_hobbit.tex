@@ -21,13 +21,14 @@
 
 % \setmonofont{Inconsolatazi4}
 \usepackage{./recorder-fingering}
+\fingeringSetup{width=12pt}
 \usepackage{parskip}
 \usepackage{musixtex}
 \input musixlyr
 \usetikzlibrary{tikzmark}
 \usetikzlibrary{positioning}
 
-\NewDocumentCommand{\addf}{mm}{\tikz[remember picture]{\node[overlay,above=of pic cs:#2]{\Irish{#1}};}}
+\NewDocumentCommand{\addf}{mm}{\tikz[remember picture]{\node[overlay,above=of pic cs:#2]{\Whistle{#1}};}}
 \DefineShortVerb{\|}
 
 \title{Lord Of The Rings -- Concerning Hobbits}
@@ -67,21 +68,21 @@
     \toprule
     d & e & f\# & a & f\# & e & d & f\# & a & b & $\circ$~D & c\# & a & f\# & $\circ$~e \\
     \midrule
-    \Irish{d} & 
-    \Irish{e} &
-    \Irish{f#} &
-    \Irish{a} &
-    \Irish{f#} & 
-    \Irish{e} & 
-    \Irish{d}\spaceforvbar &
-    \Irish{f#} & 
-    \Irish{a} &
-    \Irish{b} &
-    \Irish{D} &
-    \Irish{c#} &
-    \Irish{a} & 
-    \Irish{f#} & 
-    \Irish{e} \\
+    \Whistle{d} & 
+    \Whistle{e} &
+    \Whistle{f#} &
+    \Whistle{a} &
+    \Whistle{f#} & 
+    \Whistle{e} & 
+    \Whistle{d}\spaceforvbar &
+    \Whistle{f#} & 
+    \Whistle{a} &
+    \Whistle{b} &
+    \Whistle{D} &
+    \Whistle{c#} &
+    \Whistle{a} & 
+    \Whistle{f#} & 
+    \Whistle{e} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -94,20 +95,20 @@
     \toprule
     d & e & f\# & $\circ$~a & f\# & e & d & f\# & a & b & $\circ$~a &f\# & e & d \\
     \midrule
-    \Irish{d} & 
-    \Irish{e} &
-    \Irish{f#} &
-    \Irish{a} &
-    \Irish{f#} &
-    \Irish{e} & 
-    \Irish{d}\spaceforvbar & 
-    \Irish{f#} & 
-    \Irish{a} & 
-    \Irish{b} & 
-    \Irish{a} & 
-    \Irish{f#} & 
-    \Irish{e}\spaceforvbar & 
-    \Irish{d} \\
+    \Whistle{d} & 
+    \Whistle{e} &
+    \Whistle{f#} &
+    \Whistle{a} &
+    \Whistle{f#} &
+    \Whistle{e} & 
+    \Whistle{d}\spaceforvbar & 
+    \Whistle{f#} & 
+    \Whistle{a} & 
+    \Whistle{b} & 
+    \Whistle{a} & 
+    \Whistle{f#} & 
+    \Whistle{e}\spaceforvbar & 
+    \Whistle{d} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -121,15 +122,15 @@
     \toprule
     D & E & F\# & F\# & F\# & A & E & (D) & E \\
     \midrule
-    \Irish{D} & 
-    \Irish{E} &
-    \Irish{F#} &
-    \Irish{F#}\spaceforvbar &
-    \Irish{F#} &
-    \Irish{A} & 
-    \Irish{E} & 
-    \Irish{d} & 
-    \Irish{E} \\
+    \Whistle{D} & 
+    \Whistle{E} &
+    \Whistle{F#} &
+    \Whistle{F#}\spaceforvbar &
+    \Whistle{F#} &
+    \Whistle{A} & 
+    \Whistle{E} & 
+    \Whistle{d} & 
+    \Whistle{E} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -142,15 +143,15 @@
     \toprule
     a & b & c\# & c\# & D & a & f\# & a & e \\
     \midrule
-    \Irish{a} & 
-    \Irish{b} &
-    \Irish{c#} &
-    \Irish{c#} &
-    \Irish{D} &
-    \Irish{a} & 
-    \Irish{f#} & 
-    \Irish{a} & 
-    \Irish{e} \\
+    \Whistle{a} & 
+    \Whistle{b} &
+    \Whistle{c#} &
+    \Whistle{c#} &
+    \Whistle{D} &
+    \Whistle{a} & 
+    \Whistle{f#} & 
+    \Whistle{a} & 
+    \Whistle{e} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -164,17 +165,17 @@
     \toprule
     d & e & f\# & f\# & b & c\# & D & c\# & a & f\# & e \\
     \midrule
-    \Irish{d} & 
-    \Irish{e} &
-    \Irish{f#}\spaceforvbar &
-    \Irish{f#} &
-    \Irish{b} &
-    \Irish{c#} & 
-    \Irish{D}\spaceforvbar & 
-    \Irish{c#} & 
-    \Irish{a} & 
-    \Irish{f#} & 
-    \Irish{e} \\
+    \Whistle{d} & 
+    \Whistle{e} &
+    \Whistle{f#}\spaceforvbar &
+    \Whistle{f#} &
+    \Whistle{b} &
+    \Whistle{c#} & 
+    \Whistle{D}\spaceforvbar & 
+    \Whistle{c#} & 
+    \Whistle{a} & 
+    \Whistle{f#} & 
+    \Whistle{e} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -186,25 +187,25 @@
     \toprule
     d & e & f\# & f\# & b & c\# & D & c\# & v & a & e & d \\
     \midrule
-    \Irish{d} & 
-    \Irish{e} &
-    \Irish{f#}\spaceforvbar &
-    \Irish{f#} &
-    \Irish{b} &
-    \Irish{c#} & 
-    \Irish{D}\spaceforvbar & 
-    \Irish{c#} & 
-    \Irish{b} & 
-    \Irish{a}\spaceforvbar & 
-    \Irish{e} & 
-    \Irish{d} \\
+    \Whistle{d} & 
+    \Whistle{e} &
+    \Whistle{f#}\spaceforvbar &
+    \Whistle{f#} &
+    \Whistle{b} &
+    \Whistle{c#} & 
+    \Whistle{D}\spaceforvbar & 
+    \Whistle{c#} & 
+    \Whistle{b} & 
+    \Whistle{a}\spaceforvbar & 
+    \Whistle{e} & 
+    \Whistle{d} \\
     \bottomrule
   \end{tabular}
 \end{center}
 
 \clearpage
 \subsection*{Attempt to put MusixTeX and fingering in sync}
-\vspace{\heightof{\Irish{C}}+\baselineskip}
+\vspace{\heightof{\Whistle{C}}+\baselineskip}
 \begin{music} % d & e & f\# & a & f\# & e & d
 \setlyrics{scale}{d e f\# a f\# e d}
 \lyrraise{1}{b-2ex}
