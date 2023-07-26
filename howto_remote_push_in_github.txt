@@ -1,0 +1,19 @@
+# once the git clone has been done...
+# cf. my google keep note for more details
+
+# 1. just do this
+git remote set-url origin https://MYTOKEN@github.com/cal-invisible/recorder-fingering
+
+# and I will be connected to the remote repo as if I was at home...
+
+# 2. pull request
+# ...
+
+# 3. to rebase on updates on the original
+git remote add upstream https://github.com/amunn/recorder-fingering.git
+git fetch upstream
+# accept all
+git checkout --theirs .
+git add ...
+git commit -m 'merge new version'
+git push
